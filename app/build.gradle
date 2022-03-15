@@ -2,7 +2,12 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-parcelize'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    id 'com.google.firebase.firebase-perf'
 }
+
+
 
 android {
     compileSdk 32
@@ -50,6 +55,13 @@ dependencies {
     // Glide (Image Loading): https://github.com/bumptech/glide
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    // Firebase Dependencies: https://firebase.google.com/docs/android/setup?hl=pt-br
+    implementation platform('com.google.firebase:firebase-bom:29.2.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-perf-ktx'
+
 
 
     testImplementation 'junit:junit:4.13.2'

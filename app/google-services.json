@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "879073799063",
+    "project_id": "simulador-8",
+    "storage_bucket": "simulador-8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879073799063:android:367080d70a8b6f8523f2d2",
+        "android_client_info": {
+          "package_name": "com.simulator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "879073799063-71grk7c5h7fg2f2brus1gfvd52ec46jb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH2vztieswoVFbz7tS02Ynu9mG6mLIJek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "879073799063-71grk7c5h7fg2f2brus1gfvd52ec46jb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -48,7 +48,7 @@ public class MatchesAdapter extends RecyclerView.Adapter<MatchesAdapter.ViewHold
         Match match = matches.get(position);
 
         //adaptando os dados da partida recuperada da API para o layout
-        Glide.with(context).load(match.getHomeTeam().getImage()).circleCrop().into(holder.binding.ivHomeTeam);
+        Glide.with(context).load(match.getHomeTeam().getImage()).into(holder.binding.ivHomeTeam);
         holder.binding.tvHomeTeamName.setText(match.getHomeTeam().getName());
         if(match.getHomeTeam().getScore() != null) {
             holder.binding.tvHomeTeamScore.setText(String.valueOf(match.getHomeTeam().getScore()));
@@ -56,7 +56,7 @@ public class MatchesAdapter extends RecyclerView.Adapter<MatchesAdapter.ViewHold
             //caso contrario poderia gerar uma null pointer excep
             //forçamos que o score seja uma string pois queremos que o score seja interpretado como um texto
         }
-        Glide.with(context).load(match.getAwayTeam().getImage()).circleCrop().into(holder.binding.ivAwayTeam);
+        Glide.with(context).load(match.getAwayTeam().getImage()).into(holder.binding.ivAwayTeam);
         holder.binding.tvAwayTeamName.setText(match.getAwayTeam().getName());
         if(match.getAwayTeam().getScore() != null){
             holder.binding.tvAwayTeamScore.setText(String.valueOf(match.getAwayTeam().getScore()));
